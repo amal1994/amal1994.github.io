@@ -1,436 +1,545 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Amal Shukla - Competitive Programmer & Front End Developer</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AMAL SHUKLA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-<!-- Favicons
-  ================================================== -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-<!-- Stylesheet
-  ================================================== -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-  <link rel="stylesheet" type="text/css"  href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">AMAL SHUKLA</a></h1>
+				<span class="position"><a href="javascript:void(0)">FULL STACK DEVELOPER</a> 
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>
+						<li><a href="#" data-nav-section="experience">Experience</a></li>
+						<li><a href="#" data-nav-section="work">Work</a></li>
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
 
-    <!-- Header -->
-    <header id="header">
-      <div class="intro">
-        <div class="container">
-          <div class="row">
-            <div class="intro-text">
-              <h1>Hello, I'm <span class="name">Amal Shukla</span></h1>
-              <p>Full Stack Developer</p>
-              <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a> </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- Navigation -->
-      <div id="nav">
-        <nav class="navbar navbar-custom">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-              <a class="navbar-brand page-scroll" href="#page-top">Amal Shukla</a> </div>
+			<div class="colorlib-footer">
+				<p><small>&copy; 
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Colorlib</span> </small></p>
+			</div>
 
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                  <li class="hidden"> <a href="#page-top"></a> </li>
-                  <li> <a class="page-scroll" href="#about">About</a> </li>
-                  <li> <a class="page-scroll" href="#skills">Skills</a> </li>
-                  <!-- <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li> -->
-                  <li> <a class="page-scroll" href="#experience">Experience</a> </li>
-                  <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-        <!-- About Section -->
-        <div id="about">
-          <div class="container">
-            <div class="section-title text-center center">
-              <h2>About Me</h2>
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
-              <div class="col-md-8 col-md-offset-2">
-                <div class="about-text">
-                  <p class="text-center"><strong>Full stack Developer</strong> with 3.5+ years of experience in designing and developing applications with good understanding of Data Structures and Algorithms and exposure to the complete Software Development Life Cycle.</p>
-                  <p class="text-center"><a class="btn btn-primary" href="AMAL_CV.pdf" download="Amal-Resume"><i class="fa fa-download"></i> Download Resume</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Skills Section -->
-        <div id="skills" class="text-center">
-          <div class="container">
-            <div class="section-title center">
-              <h2>Skills</h2>
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
-                <h4>HTML5</h4>
-              </div>
-              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-                <h4>CSS3</h4>
-              </div>
-              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-                <h4>Javascript</h4>
-              </div>
-              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-                <h4>React and Redux</h4>
-              </div>
-              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span> </span>
-                <h4>Angular</h4>
-              </div>
-              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
-                <h4>Mysql and Postgres</h4>
-              </div>
-              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
-                <h4>Python</h4>
-              </div>
-              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">70</span> </span>
-                <h4>Golang</h4>
-              </div>
-              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">60</span> </span>
-                <h4>Kafka and AWS services</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio Section -->
-        <div id="portfolio">
-          <div class="container">
-            <div class="section-title text-center center">
-              <h2>Portfolio</h2>
-              <hr>
-            </div> 
-   <!--  <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div> -->
-    <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/rest-client-2.jpg" title="A chrome extension - Rest Client to make HTTP Get, Post, Put and Delete requests to a particular URL and show resposne.Built using HTML,CSS,Jquery." rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>RestClient</h4>
-                <small>Web Development</small> </div>
-                <img src="img/portfolio/rest-client-1.jpg" class="img-responsive" alt="Airfinder"> </a> </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 app">
-              <div class="portfolio-item">
-                <div class="hover-bg"> <a href="img/portfolio/user-2.jpg" title="A small application to handle user posts and their information.Perform CRUD operations on user data.Built using HTML, CSS, Angular and https://jsonplaceholder.typicode.com for dummy data." rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>User Profile</h4>
-                    <small>Web Development</small> </div>
-                    <img src="img/portfolio/user-1.jpg" class="img-responsive" alt="Jason Learning"> </a> </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                  <div class="portfolio-item">
-                    <div class="hover-bg"> <a href="img/portfolio/github-2.jpg" title="The application is a replica of Github Issues where users can track open/closed issues of a repository.Built using HTML, CSS, Angular and json web-api-token for user authentication at front end." rel="prettyPhoto">
-                      <div class="hover-text">
-                        <h4>Github Issues</h4>
-                        <small>Web Development</small> </div>
-                        <img src="img/portfolio/github-1.jpg" class="img-responsive" alt="Task Assign Tracker"> </a> </div>
-                      </div>
-                    </div>
+		</aside>
 
-                    <div class="col-sm-6 col-md-3 col-lg-3 app">
-                      <div class="portfolio-item">
-                        <div class="hover-bg"> <a href="img/portfolio/campgrounds-2.jpg" title="The application is a full stack application where user can add campgrounds with their information,can comment on the campgrounds.Users can perform CRUD on both campgrounds and their comments.User authentication is implemented so that the user who created the campground can only perform CRUD on it.Built using HTML, CSS, Node.js, MongoDB and passport.js for user authentication. The working url of project -  https://app-yelpcamp.herokuapp.com" rel="prettyPhoto">
-                          <div class="hover-text">
-                            <h4>Yelpcamp - Finding campgrounds near you</h4>
-                            <small>Web Development</small> </div>
-                            <img src="img/portfolio/campgrounds-1.jpg" class="img-responsive" alt="Unity Influence"> </a> </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Achievements Section -->
-<!-- <div id="achievements" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Some Stats</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
-        <div class="achievement-box"> <span class="count">310</span>
-          <h4>Happy Clients</h4>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="400ms">
-        <div class="achievement-box"> <span class="count">4700</span>
-          <h4>Hours of Work</h4>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="600ms">
-        <div class="achievement-box"> <span class="count">30</span>
-          <h4>Awards Won</h4>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
-        <div class="achievement-box"> <span class="count">8</span>
-          <h4>Years of Experience</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-<!-- Resume Section -->
-<div id="experience" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Work Experience</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image">
-              <h4>July 2019 <br>
-                - <br>
-              Present </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>GRAB</h4>
-                <h4 class="subheading">Full Stack Developer</h4>
-              </div>
-              <div class="timeline-body">
-                <p>
-                  As a developer, I contribute towards :-
-                  1) Designing and developing scalable solutions for feature requests pertaining to merchant payments.
-                  2) Developing front end dashboard for payment support team to easily carry out and handle payments for merchants that might have been restricted by the system.
-                  3) Developing scalable solutions pertaining to reporting service which helps merchants reconcile their payments.               
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <h4>June 2018 <br>
-                - <br>
-              July 2019 </h4>
-            </div>
-            <div class="timeline-panel float-right text-left">
-              <div class="timeline-heading">
-                <h4>Delhivery</h4>
-                <h4 class="subheading">Full Stack Developer</h4>
-              </div>
-              <div class="timeline-body">
-                <p>As a full stack developer I contributed in:
-                  1) optimising the dispatch creation and completion flow by building features to reduce manual intervention like automatic updation of package status when the dispatch is being
-                  closed etc to reduce total turnaround time for dispatch completion.
-                  2) Building UI for the dispatch creation
-                3) Revamp of the eye dashboard which is being used by operations team consisting of widgets and graphs to help them visualise real time data.</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <h4>July 2016 <br>
-                - <br>
-              June 2018 </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Quovantis Technologies</h4>
-                <h4 class="subheading">Software Engineer</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Worked on multiple projects comprising majorly of the front end stack including HTML,CSS,SASS,
-                Bootstrap,Jquery,AngularJS (Angular 2+).Apart from that ,I possess intermediate knowledge of NodeJS and MongoDB.</p>
-              </div>
-            </div>
-          </li>
-          
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="section-title center">
-    <h2>Education</h2>
-    <hr>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <ul class="timeline">
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/intro-bg.gif);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1>Hi! <br>I'm AMAL</h1>
+						   					<h2>Full Stack Developer</h2>
+												<p><a class="btn btn-primary btn-learn" href="AMAL_CV.pdf" download="Amal-Cv">Download CV <i class="icon-download4"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
 
-        <!-- Education Section-->
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Us</span>
+										<h2 class="colorlib-heading">Who Am I?</h2>
+										<p><strong>Hi I'm Amal Shukla</strong> Full stack Developer with around 4 years of experience in software development.</p>
+										<p>Experience in designing and developing applications with good understanding of Data Structures and Algorithms and with exposure to the complete Software Development Life Cycle.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-monitor"></i></span>
+										<h3>Software</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3>Database</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-phone3"></i></span>
+										<h3>Application</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <li>
-          <div class="timeline-image">
-            <h4>2012 <br>
-              - <br>
-            2016 </h4>
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>JSS ACADEMY OF TECHNICAL EDUCATION,NOIDA</h4>
-              <h4 class="subheading">Bachelor Of Technology</h4>
-            </div>
-            <div class="timeline-body">
-              <p></p>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-image">
-            <h4>2011 <br>
-              - <br>
-            2012 </h4>
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>Indraprastha International School</h4>
-              <h4 class="subheading"> Intermediate Degree</h4>
-            </div>
-            <div class="timeline-body">
-              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p> -->
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-image">
-            <h4>2009 <br>
-              - <br>
-            2010 </h4>
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>Indraprastha International School</h4>
-              <h4 class="subheading">High School Degree</h4>
-            </div>
-            <div class="timeline-body">
-              <!-- <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p> -->
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-</div>
-<!-- Contact Section -->
-<div id="contact" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Contact</h2>
-      <hr>
-    </div>
-    <div class="col-md-8 col-md-offset-2">
-      <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-        <p>Dwarka,<br>
-        New Delhi, India 110075</p>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-        <p>shuklamal94@gmail.com</p>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-        <p> +91 8860996894</p>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-    <div class="col-md-8 col-md-offset-2">
-      <h3>Leave me a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default">Send Message</button>
-      </form>
-      <div class="social">
-        <ul>
-          <li><a target="_blank" href="https://www.facebook.com/amal199404"><i class="fa fa-facebook"></i></a></li>
-          <li><a target="_blank" href="https://twitter.com/shukla_amal"><i class="fa fa-twitter"></i></a></li>
-          <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-          <li><a target="_blank" href="https://github.com/amal1994"><i class="fa fa-github"></i></a></li>
-          <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
-          <li><a target="_blank" href="https://www.linkedin.com/in/amal-shukla-3831b593"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="footer">
-  <div class="container text-center">
-    <div class="fnav">
-      <p>Copyright &copy; 2020 Amal Shukla. Designed by <a href="javascipt void(0)" rel="nofollow">Amal Shukla</a></p>
-    </div>
-  </div>
-</div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/easypiechart.js"></script> 
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jquery.counterup.js"></script> 
-<script type="text/javascript" src="js/waypoints.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
-</body>
+
+			
+
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>HTML</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>CSS</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Javascript</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Angular</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>React+Redux</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    <span>75%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Python</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    <span>70%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Golang</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="60" style="width:60%">
+								    <span>60%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Mysql</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="70" style="width:70%">
+								    <span>60%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Education</span>
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bachelor of Technology, Information Technology
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-6">
+										      			<p>COLLEGE - <strong> JSS ACADEMY OF TECHNICAL EDUCATION</strong> </p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>Batch <strong>2012-2016</strong></p>
+										      		</div>
+										      	</div>
+									         </div>
+									    </div>
+									</div>
+
+
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFive">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Intermediate School
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+									        <div class="panel-body">
+									        	<div class="col-md-6">
+										      			 <p>Name <strong>Indraprastha International School</strong></p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>Batch <strong>2011-2012</strong></p>
+										      		</div>
+									       	
+									        </div>
+									    </div>
+									</div>
+
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFive">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">High School School
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+									        <div class="panel-body">
+									        	<div class="col-md-6">
+										      			 <p>Name <strong>Indraprastha International School</strong></p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>Batch <strong>2009-2010</strong></p>
+										      		</div>
+									       	
+									        </div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Full Stack Developer at GRAB</a> <span>2019-Present</span></h2>
+					                  <p>As a developer, I contribute towards :- 
+					                  1) Designing and developing scalable solutions for feature requests pertaining to merchant payments. 
+					              2) Developing front end dashboard for payment support team to easily carry out and handle payments for merchants that might have been restricted by the system. 
+					          3) Developing scalable solutions pertaining to reporting service which helps merchants reconcile their payments.</p>
+					               </div>
+					            </div>
+					         </article>
+
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Full Stack Developer at Delhivery</a> <span>2017-2018</span></h2>
+					                  <p>As a full stack developer I contributed in: 
+					                  1) optimising the dispatch creation and completion flow by building features to reduce manual intervention like automatic updation of package status when the dispatch is being closed etc to reduce total turnaround time for dispatch completion. 
+					              2) Building UI for the dispatch creation 
+					          3) Revamp of the eye dashboard which is being used by operations team consisting of widgets and graphs to help them visualise real time data.</p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Software Engineer at QUOVANTIS TECHNOLOGIES</a> <span>2016-2018</span></h2>
+					                  <p>Worked on multiple projects comprising majorly of the front end stack including HTML,CSS,SASS, Bootstrap,Jquery,AngularJS (Angular 2+).Apart from that ,I possess intermediate knowledge of NodeJS and MongoDB.</p>
+					               </div>
+					            </div>
+					         </article>
+
+					       
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+
+			<section class="colorlib-work" data-section="work">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Work</span>
+							<h2 class="colorlib-heading animate-box">Recent Work</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/portfolio/rest-client-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="javascript:void(0)">RestClient</a></h3>
+										<span>A chrome extension - Rest Client to make HTTP Get, Post, Put and Delete requests to a particular URL and show resposne.Built using HTML,CSS,Jquery.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/portfolio/user-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">User Profile</a></h3>
+										<span>A small application to handle user posts and their information.Perform CRUD operations on user data.Built using HTML, CSS, Angular and https://jsonplaceholder.typicode.com for dummy data.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/portfolio/github-2.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Github Issues</a></h3>
+										<span>The application is a replica of Github Issues where users can track open/closed issues of a repository.Built using HTML, CSS, Angular and json web-api-token for user authentication at front end.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="project" style="background-image: url(images/portfolio/campgrounds-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Yelpcamp - Finding campgrounds near you</a></h3>
+										<span>The application is a full stack application where user can add campgrounds with their information,can comment on the campgrounds.Users can perform CRUD on both campgrounds and their comments.User authentication is implemented so that the user who created the campground can only perform CRUD on it.Built using HTML, CSS, Node.js, MongoDB and passport.js for user authentication. The working url of project -  https://app-yelpcamp.herokuapp.com</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-globe-outline"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="mailto:shuklamal94@gmail.com">shuklamal94@gmail.com</a></p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>India</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="tel://">+91-8860996894</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-push-1">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+									<form action="https://formspree.io/myyngylw" method="POST">
+										<div class="form-group">
+											<input type="text" class="form-control" name="name" placeholder="Name">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" name="email" placeholder="Email">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" name="subject" placeholder="Subject">
+										</div>
+										<div class="form-group">
+											<textarea id="message" cols="30" rows="7" name="message" class="form-control" placeholder="Message"></textarea>
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+										</div>
+									</form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
